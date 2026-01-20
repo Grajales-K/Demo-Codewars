@@ -9,3 +9,7 @@ function stringToArray(string) {
 }
 
 module.exports = stringToArray;
+
+
+// Explanation: we used the method split(" ") to split the 
+// string into an array of words, using the space character as the separator.
