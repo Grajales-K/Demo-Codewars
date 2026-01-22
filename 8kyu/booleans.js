@@ -5,9 +5,10 @@ function boolToWord(bool){
     if(bool === true){
         return "Yes";
     }else{
-        return "no";
+        return "No";
     }
 }
+module.exports = boolToWord;
 
 // Alternative solution using ternary operator
 
