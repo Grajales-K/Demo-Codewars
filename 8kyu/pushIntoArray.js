@@ -12,10 +12,18 @@ items.push({ a: "b", c: "d" });
 
 console.log(items);
 
+module.exports = items;
+
 
 // example
+
 
 const animals = ["pigs", "goats", "sheep"];
 
 const count = animals.push("cows");
 console.log(count, animals);   // 4 ["pigs", "goats", "sheep", "cows"]
+
+
+// [] = Array
+// {} = Object
+// () = Function or Method
