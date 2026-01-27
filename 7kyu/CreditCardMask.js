@@ -7,15 +7,9 @@ function maskify(cc) {
   }
 
   const lastFour = cc.slice(-4);
-  // console.log(lastFour);
-
   const maskingPart = cc.slice(0, -4);
-  // console.log(maskingPart);
-
   const masked = "#".repeat(maskingPart.length);
-  console.log(masked);
-
-  // console.log(masked + lastFour);
+  console.log(masked)
 
   return masked + lastFour;
 }
