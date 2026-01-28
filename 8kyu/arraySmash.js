@@ -18,4 +18,20 @@
 // Disclaimer
 // This is for beginners so we want to test basic loops and string manipulation.
 
+// Array.prototype.toString();
+// method of Array instances returns a string representing the specified array and its elements.
 
+
+function smash (words) {
+    let sentence = "";
+    
+    for (let i = 0; i < words.length; i++) {
+        sentence += words[i];
+        
+        if (i < words.length - 1) {
+            sentence += " ";
+        }
+    }
+    
+    return sentence;
+};
