@@ -35,3 +35,11 @@ function smash (words) {
     
     return sentence;
 };
+
+function smash(words) {
+  let sentence = "";
+  for (let i = 0; i < words.length; i++) {
+    sentence += words[i] + " ";
+  }
+  return sentence.trim(); // Removes the space from the very end
+}
