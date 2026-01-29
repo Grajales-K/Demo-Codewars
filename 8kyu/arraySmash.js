@@ -35,3 +35,12 @@ function smash (words) {
     
     return sentence;
 };
+
+
+  // 1. Convert to string: "hello,world,this,is,great"
+  // 2. Replace all commas with spaces
+function smash(words) {
+  return words.toString().replaceAll(",", " ");
+}
+
+console.log(smash(['hello', 'world', 'this', 'is', 'great'])); // 'hello world this is great'
