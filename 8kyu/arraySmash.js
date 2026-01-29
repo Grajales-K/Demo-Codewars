@@ -22,19 +22,19 @@
 // method of Array instances returns a string representing the specified array and its elements.
 
 
-function smash (words) {
-    let sentence = "";
+// function smash (words) {
+//     let sentence = "";
     
-    for (let i = 0; i < words.length; i++) {
-        sentence += words[i];
+//     for (let i = 0; i < words.length; i++) {
+//         sentence += words[i];
         
-        if (i < words.length - 1) {
-            sentence += " ";
-        }
-    }
+//         if (i < words.length - 1) {
+//             sentence += " ";
+//         }
+//     }
     
-    return sentence;
-};
+//     return sentence;
+// };
 
 
   // 1. Convert to string: "hello,world,this,is,great"
@@ -43,4 +43,11 @@ function smash(words) {
   return words.toString().replaceAll(",", " ");
 }
 
-console.log(smash(['hello', 'world', 'this', 'is', 'great'])); // 'hello world this is great'
+console.log(smash(["hello", "world", "this", "is", "great"])); // 'hello world this is great'
+
+
+console.log(
+  smash(["hello", "world"]),
+  "| Tipo:",
+  typeof smash(["hello", "world"])
+);
