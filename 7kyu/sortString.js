@@ -24,3 +24,28 @@
 // ===================> fixed function =========================
 
 
+let sortArray = function (str) {
+  return str.split("").sort().join("");
+};
+
+
+const items = [
+  "dcba",
+  "zyxw",
+  "mnop",
+  "hgfe",
+  "qrst",
+  "12345",
+  "56820",
+  "385973",
+];
+
+// This function processes each individual string
+
+
+console.log("--- Testing Sort Logic ---");
+
+for (const item of items) {
+  const sortedResult = sortArray(item);
+  console.log(`Original: ${item}  ->  Sorted: ${sortedResult}`);
+}
