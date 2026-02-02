@@ -27,6 +27,7 @@
 
 const arrowFunc = function (arr) {
   return arr.map((x) => (x = String.fromCharCode(x))).join(""); 
+};
 
 
 
