@@ -6,15 +6,30 @@
 // 5, "Hello" -> "HelloHelloHelloHelloHello"
 
 
-function repeatStr (n, s) {
-  return s.repeat(n);
-}
+// function repeatStr (n, s) {
+//   return s.repeat(n);
+// }
 
 function repeatStr (n, s){
-    let result = " ";
+    let result = "";
     for (let i = 0; i < n; i++){
-        return result += s;
+        result += s;
     }
     return result;
 }
 
+
+const testCases = [
+    [3, "js"],
+    [5, "*"],
+    [2, "ha"],
+    [4, " "],
+    [5, "yes"]
+];
+
+console.log("----------- testing repeatStr -----------");
+
+for (const [n, s] of testCases){
+    const result = repeatStr(n, s);
+    console.log(` n: "${n}" | s:  "${s}" | result: "${result}"`);
+}
