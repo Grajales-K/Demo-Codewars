@@ -32,3 +32,18 @@ function gordon(a) {
   }
   return result.join(" ");
 }
+
+
+const testCases = [
+  ["What feck damn cake"],
+  ["are you stu pid"],
+  ["i am a chef"]
+];
+
+console.log("----------- testing Gordon Words -----------");
+
+for (const [a] of testCases) {
+  const result = gordon(a);
+   //by  using \n we can separate the input string from the result.
+  console.log(`a: "${a}" \nresult: "${result}"\n`);
+}
