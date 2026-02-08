@@ -10,3 +10,7 @@ const reverseSeq = (n) => {
 
   return result;
 };
+
+// Alternative solution using empty array mapping the array
+//and looping through it with the index to get the value
+//while i is greater than 0 push the element to the result array
