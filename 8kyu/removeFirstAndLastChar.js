@@ -26,3 +26,27 @@ function removeChar(str){
     return newString;
 }
 
+
+
+console.log("--------- Testing removeChar Logic  --------");
+
+
+const items = [
+  "eloquent",// > 'loquen'
+  "country", // > 'ountr
+  "person", // > 'erso'
+  "place", // > 'lac'
+  "qrst", // > 'rs'
+  "ooopsss", // > 'oopss'
+  "xyz", // > 'y'
+  "ab", // > '' (empty string)
+  "Marta" // > 'art'
+];
+
+// This function processes each individual string
+
+for (const item of items) {
+  const sortedResult = removeChar(item);
+  console.log(`str: ${item}  ->  newString: ${sortedResult}`);
+}
+
