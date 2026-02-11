@@ -14,9 +14,27 @@ function abbrevName(name){
 
     for(let i = 0; i < name.length; i++){
         if(name[i] === " "){
-            acronym = acronym + "." + name[i + 1].upperCase();
+            acronym = acronym + "." + name[i + 1].toUpperCase();
         }
     }
-    return acronym
+    return acronym;
 }
 
+
+// This function processes each individual string
+
+console.log("--- Testing abbrevName Logic ---");
+
+const names = [
+  "Sam harris ford",
+  "Patrick Feenan",
+  "Evan Cole",
+  "P Favuzzi",
+  "David Mendieta",
+
+];
+
+for (const item of names) {
+  const sortedResult = abbrevName(item);
+  console.log(`Original: ${item}  ->  acronym: ${sortedResult}`);
+}
