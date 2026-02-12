@@ -35,3 +35,18 @@ function basicOp(operation, value1, value2){
     return 0; //if the operator is not recognized, return 0 as a default case
 }
 
+
+console.log("--- Testing basicOp test ---");   
+
+const testArrays = [
+  ["+", 4, 7],
+  ["-", 15, 18],
+  ["*", 5, 5],
+  ["/", 49, 7],
+];
+ 
+for (const [op, v1, v2] of testArrays) {
+  const result = basicOp(op, v1, v2); 
+  console.log(`test:  ${op}, ${v1}, ${v2} -> Output: "${result}"`);
+};
+
