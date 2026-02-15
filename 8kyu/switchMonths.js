@@ -35,3 +35,14 @@ function howManyDays(month){
             return 31;
     }
 }
+
+console.log("--- Testing howManyDays test ---");
+
+months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+for (const month of months){
+    const result = howManyDays(month);
+    console.log(`test: ${month} -> Output: "${result}"`);
+}
+
+
