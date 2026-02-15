@@ -15,11 +15,11 @@
 // you have to return all the numbers in that string in the order 
 // they occur.
 
-To solve this, we use a Regular Expression (Regex) with the 
-\D shorthand caracter by applying  the g (global) flag, we ensure the function
-replaces every non-numeric character in the string, not just the first onemptied. 
-Finally, we replace theses matches with an empty string, and convert the result
-into a Number() to return the final output.
+// To solve this, we use a Regular Expression (Regex) with the 
+// \D shorthand caracter by applying  the g (global) flag, we ensure the function
+// replaces every non-numeric character in the string, not just the first onemptied. 
+// Finally, we replace theses matches with an empty string, and convert the result
+// into a Number() to return the final output.
 
 
 function filterString(value) {
@@ -27,3 +27,18 @@ function filterString(value) {
    return Number(value.replace(/\D/g, ''))
 }
 
+console.log("--- Testing filterString test ---");
+
+const testStrings = [
+
+    "a1b2c3",
+    "abc123def",
+    "1a2b3c4d5e6f7g8h9i0",
+    "no numbers here",
+    "12345"
+];
+
+for (const value of testStrings) {
+    const result = filterString(value);
+    console.log(`test: "${value}" -> Output: "${result}"`);
+}
