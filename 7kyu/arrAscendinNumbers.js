@@ -23,3 +23,22 @@ function minMax(arr){
     return [sortArr[0],sortArr[lastIndex]];
 }
 
+
+console.log("--- Testing minMax test ---");
+
+const testarrays = [
+    [1,2,3,4,5],
+    [2334454,5],
+    [1]
+]
+
+for (const arr of testarrays) {
+  const result = minMax(arr);
+
+  console.log("Input original arr", arr);
+  console.log("Result after function", result);
+}
+
+//To display the each testarrays we use console.log individually, 
+// and we will see the input before to pass it to the function, 
+// and then we will see the result of the function.
