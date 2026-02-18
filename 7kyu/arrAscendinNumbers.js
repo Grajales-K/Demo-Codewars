@@ -33,9 +33,8 @@ const testarrays = [
 ]
 
 for (const arr of testarrays) {
-  const result = minMax(arr);
-
   console.log("Input original arr", arr);
+  const result = minMax(arr);
   console.log("Result after function", result);
 }
 
