@@ -77,3 +77,4 @@ function fridgeOrganizer(items) {
 
   return nombres;
 }
+
