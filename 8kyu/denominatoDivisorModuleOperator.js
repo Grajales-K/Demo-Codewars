@@ -51,3 +51,43 @@ testCases.forEach(({ numbers, divisor, expected }, index) => {
     }\n`
   );
 });
+
+
+
+// --- INICIO DEL FLUJO ---
+
+// 1. El forEach "desarma" el objeto del test:
+//    numbers = [1, 2], divisor = 1, expected = [1, 2]
+
+// 2. Entramos a tu función:
+const result = divisibleBy([1, 2], 1); 
+/* DENTRO DE LA FUNCIÓN:
+   - result empieza como []
+   - Ciclo i=0: (1 % 1 === 0) es TRUE -> result[0] = 1 (result es [1])
+   - Ciclo i=1: (2 % 1 === 0) es TRUE -> result[1] = 2 (result es [1, 2])
+   - Retorna [1, 2]
+*/
+
+// 3. Ahora result vale [1, 2]. Vamos a la línea del "juicio":
+const passed = sameArrays([1, 2], [1, 2]);
+
+/* DENTRO DE sameArrays(a, b):
+   a = [1, 2]
+   b = [1, 2]
+
+   Paso A: ¿a.length === b.length? 
+           ¿2 === 2? -> SÍ (True)
+
+   Paso B: && (y además) ejecutamos el .every()
+           - i=0: ¿a[0] === b[0]? (1 === 1) -> SÍ
+           - i=1: ¿a[1] === b[1]? (2 === 2) -> SÍ
+
+   Paso C: Como todo fue SÍ, sameArrays devuelve TRUE.
+*/
+
+// 4. La variable 'passed' ahora guarda el valor TRUE.
+
+// 5. El console.log final:
+//    Usa el "operador ternario" (el signo ?):
+//    ¿Es passed true? 
+//    SÍ -> Imprime "✅ PASS"
