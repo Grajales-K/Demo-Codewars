@@ -117,3 +117,18 @@ function aliasGen(first, last) {
     return `${nameAlias} ${surnameAlias}`;
 }
 
+
+
+console.log("------- Test Cases -------");
+
+const testCases = [
+  ["Larry", "Brentwood"],
+  ["123abc", "Petrovic"],
+  ["Annie", "Smith"],
+  ["bob", "barker"],
+  ["!@#$%^&*()_+", "Petrovic"],
+];
+
+testCases.forEach(([first, last]) => {
+  console.log(`aliasGen('${first}', '${last}') ===>`, aliasGen(first, last));
+});
