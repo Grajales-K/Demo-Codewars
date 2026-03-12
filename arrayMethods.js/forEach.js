@@ -73,4 +73,24 @@ const lowCalorieFruits = fruits.filter(fruit => fruit.calories < 10);
 console.log(lowCalorieFruits); // [{ name: 'grape', color: 'purple', calories: 3 }, { name: 'strawberry', color: 'red', calories: 4 }]   
 
 
+// ------- reduce() method ---------
+
+const maxFruit = fruits.reduce( (max, fruit) =>
+                                fruit.calories > max.calories ? 
+                                fruit : max
+);  
+
+const minFruit = fruits.reduce( (min, fruit) =>
+                                fruit.calories < min.calories ? 
+                                fruit : min
+);  
+
+console.log(maxFruit); // { name: 'banana', color: 'yellow', calories: 105 } 
+console.log(minFruit); // { name: 'grape', color: 'purple', calories: 3 }
+
+// fruits.reduce( (function de compared) , valor_initial );
+
+// const maxFruit1 = fruits.reduce((max, fruit) => {
+//   return fruit.calories > max.calories ? fruit : max;
+// }, fruits[0]); // start with the first fruit as the initial max
 
