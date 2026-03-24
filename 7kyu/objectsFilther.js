@@ -51,7 +51,10 @@ const list1 = [
 
 
 
-
+function getFirstPython(list) {
+  const pythonDev = list.find(dev => dev.language === 'Python');
+  return pythonDev ? `${pythonDev.firstName}, ${pythonDev.country}` : 'There will be no Python developers';
+}
 
 function getFirstPython2(list) {
     const result = list.filter((element) => element.language === 'Python')
@@ -62,5 +65,5 @@ function getFirstPython2(list) {
     return `${result[0].firstName}, ${result[0].country}`;
 }
 
-
+console.log(getFirstPython(list1));
 console.log(getFirstPython2(list1));
