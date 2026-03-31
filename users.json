@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "email": "alice@example.com",
+    "regTime": 2,
+    "isVIP": true,
+    "balance": 100
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "email": "bob@example.com",
+    "regTime": 4,
+    "isVIP": false,
+    "balance": 50
+  },
+  {
+    "id": 3,
+    "name": "Charlie Davis",
+    "email": "charlie@example.com",
+    "regTime": 7,
+    "isVIP": true,
+    "balance": 200
+  },
+  {
+    "id": 4,
+    "name": "Diana Prince",
+    "email": "diana@example.com",
+    "regTime": 3,
+    "isVIP": false,
+    "balance": 75
+  },
+  {
+    "id": 5,
+    "name": "Ethan Hunt",
+    "email": "ethan@example.com",
+    "regTime": 12,
+    "isVIP": true,
+    "balance": 300
+  },
+  {
+    "id": 6,
+    "name": "Fiona Glenanne",
+    "email": "fiona@example.com",
+    "regTime": 5,
+    "isVIP": false,
+    "balance": 40
+  },
+  {
+    "id": 7,
+    "name": "George Miller",
+    "email": "george@example.com",
+    "regTime": 15,
+    "isVIP": false,
+    "balance": 90
+  },
+  {
+    "id": 8,
+    "name": "Hannah Abbott",
+    "email": "hannah@example.com",
+    "regTime": 1,
+    "isVIP": true,
+    "balance": 150
+  },
+  {
+    "id": 9,
+    "name": "Ian Wright",
+    "email": "ian@example.com",
+    "regTime": 20,
+    "isVIP": false,
+    "balance": 60
+  },
+  {
+    "id": 10,
+    "name": "Julia Roberts",
+    "email": "julia@example.com",
+    "regTime": 4,
+    "isVIP": true,
+    "balance": 500
+  },
+  {
+    "id": 11,
+    "name": "Kevin Hart",
+    "email": "kevin@example.com",
+    "regTime": 8,
+    "isVIP": false,
+    "balance": 30
+  },
+  {
+    "id": 12,
+    "name": "Laura Palmer",
+    "email": "laura@example.com",
+    "regTime": 3,
+    "isVIP": true,
+    "balance": 120
+  },
+  {
+    "id": 13,
+    "name": "Michael Scott",
+    "email": "michael@example.com",
+    "regTime": 25,
+    "isVIP": false,
+    "balance": 10
+  },
+  {
+    "id": 14,
+    "name": "Nina Simone",
+    "email": "nina@example.com",
+    "regTime": 6,
+    "isVIP": true,
+    "balance": 400
+  },
+  {
+    "id": 15,
+    "name": "Oscar Isaac",
+    "email": "oscar@example.com",
+    "regTime": 2,
+    "isVIP": false,
+    "balance": 85
+  },
+  {
+    "id": 16,
+    "name": "Peter Parker",
+    "email": "peter@example.com",
+    "regTime": 10,
+    "isVIP": true,
+    "balance": 20
+  },
+  {
+    "id": 17,
+    "name": "Quinn Fabray",
+    "email": "quinn@example.com",
+    "regTime": 30,
+    "isVIP": false,
+    "balance": 55
+  },
+  {
+    "id": 18,
+    "name": "Riley Reid",
+    "email": "riley@example.com",
+    "regTime": 5,
+    "isVIP": true,
+    "balance": 180
+  },
+  {
+    "id": 19,
+    "name": "Steve Rogers",
+    "email": "steve@example.com",
+    "regTime": 45,
+    "isVIP": false,
+    "balance": 95
+  },
+  {
+    "id": 20,
+    "name": "Tony Stark",
+    "email": "tony@example.com",
+    "regTime": 1,
+    "isVIP": true,
+    "balance": 1000
+  },
+  {
+    "id": 21,
+    "name": "Ursula Corbero",
+    "email": "ursula@example.com",
+    "regTime": 14,
+    "isVIP": false,
+    "balance": 70
+  },
+  {
+    "id": 22,
+    "name": "Victor Stone",
+    "email": "victor@example.com",
+    "regTime": 9,
+    "isVIP": true,
+    "balance": 250
+  },
+  {
+    "id": 23,
+    "name": "Wanda Maximoff",
+    "email": "wanda@example.com",
+    "regTime": 2,
+    "isVIP": true,
+    "balance": 350
+  },
+  {
+    "id": 24,
+    "name": "Xander Cage",
+    "email": "xander@example.com",
+    "regTime": 18,
+    "isVIP": false,
+    "balance": 45
+  },
+  {
+    "id": 25,
+    "name": "Yara Greyjoy",
+    "email": "yara@example.com",
+    "regTime": 22,
+    "isVIP": false,
+    "balance": 110
+  },
+  {
+    "id": 26,
+    "name": "Zane Truesdale",
+    "email": "zane@example.com",
+    "regTime": 3,
+    "isVIP": true,
+    "balance": 190
+  },
+  {
+    "id": 27,
+    "name": "Amy Pond",
+    "email": "amy@example.com",
+    "regTime": 11,
+    "isVIP": false,
+    "balance": 65
+  },
+  {
+    "id": 28,
+    "name": "Bruce Wayne",
+    "email": "bruce@example.com",
+    "regTime": 1,
+    "isVIP": true,
+    "balance": 900
+  },
+  {
+    "id": 29,
+    "name": "Clark Kent",
+    "email": "clark@example.com",
+    "regTime": 5,
+    "isVIP": false,
+    "balance": 25
+  },
+  {
+    "id": 30,
+    "name": "Donna Noble",
+    "email": "donna@example.com",
+    "regTime": 16,
+    "isVIP": false,
+    "balance": 80
+  },
+  {
+    "id": 31,
+    "name": "Eddie Brock",
+    "email": "eddie@example.com",
+    "regTime": 7,
+    "isVIP": true,
+    "balance": 140
+  },
+  {
+    "id": 32,
+    "name": "Flash Thompson",
+    "email": "flash@example.com",
+    "regTime": 13,
+    "isVIP": false,
+    "balance": 35
+  },
+  {
+    "id": 33,
+    "name": "Gwen Stacy",
+    "email": "gwen@example.com",
+    "regTime": 4,
+    "isVIP": true,
+    "balance": 210
+  },
+  {
+    "id": 34,
+    "name": "Harry Osborn",
+    "email": "harry@example.com",
+    "regTime": 19,
+    "isVIP": false,
+    "balance": 125
+  },
+  {
+    "id": 35,
+    "name": "Iris West",
+    "email": "iris@example.com",
+    "regTime": 2,
+    "isVIP": true,
+    "balance": 310
+  },
+  {
+    "id": 36,
+    "name": "Jack Sparrow",
+    "email": "jack@example.com",
+    "regTime": 50,
+    "isVIP": false,
+    "balance": 0
+  },
+  {
+    "id": 37,
+    "name": "Kate Bishop",
+    "email": "kate@example.com",
+    "regTime": 8,
+    "isVIP": true,
+    "balance": 160
+  },
+  {
+    "id": 38,
+    "name": "Loki Laufeyson",
+    "email": "loki@example.com",
+    "regTime": 1,
+    "isVIP": false,
+    "balance": 450
+  },
+  {
+    "id": 39,
+    "name": "Miles Morales",
+    "email": "miles@example.com",
+    "regTime": 10,
+    "isVIP": true,
+    "balance": 55
+  },
+  {
+    "id": 40,
+    "name": "Natasha Romanoff",
+    "email": "natasha@example.com",
+    "regTime": 6,
+    "isVIP": true,
+    "balance": 600
+  },
+  {
+    "id": 41,
+    "name": "Oliver Queen",
+    "email": "oliver@example.com",
+    "regTime": 14,
+    "isVIP": false,
+    "balance": 800
+  },
+  {
+    "id": 42,
+    "name": "Peggy Carter",
+    "email": "peggy@example.com",
+    "regTime": 3,
+    "isVIP": true,
+    "balance": 220
+  },
+  {
+    "id": 43,
+    "name": "Quicksilver",
+    "email": "quick@example.com",
+    "regTime": 1,
+    "isVIP": false,
+    "balance": 15
+  },
+  {
+    "id": 44,
+    "name": "Reed Richards",
+    "email": "reed@example.com",
+    "regTime": 21,
+    "isVIP": true,
+    "balance": 700
+  },
+  {
+    "id": 45,
+    "name": "Sam Wilson",
+    "email": "sam@example.com",
+    "regTime": 9,
+    "isVIP": false,
+    "balance": 130
+  },
+  {
+    "id": 46,
+    "name": "Thor Odinson",
+    "email": "thor@example.com",
+    "regTime": 1,
+    "isVIP": true,
+    "balance": 850
+  },
+  {
+    "id": 47,
+    "name": "Ultron",
+    "email": "ultron@example.com",
+    "regTime": 55,
+    "isVIP": false,
+    "balance": 0
+  },
+  {
+    "id": 48,
+    "name": "Vision",
+    "email": "vision@example.com",
+    "regTime": 4,
+    "isVIP": true,
+    "balance": 1000
+  },
+  {
+    "id": 49,
+    "name": "Wong",
+    "email": "wong@example.com",
+    "regTime": 12,
+    "isVIP": false,
+    "balance": 40
+  },
+  {
+    "id": 50,
+    "name": "Xenia Onatopp",
+    "email": "xenia@example.com",
+    "regTime": 17,
+    "isVIP": true,
+    "balance": 330
+  }
+]
