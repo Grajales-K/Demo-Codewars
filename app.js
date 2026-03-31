@@ -1,5 +1,3 @@
-const users = require('./users.json');
-
 // 1. IMPORT DATA
 // We import the raw JSON file into a constant called 'users'
 const users = require('./users.json');
