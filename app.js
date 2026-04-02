@@ -7,10 +7,11 @@ console.log(`--- 📊 Processing ${users.length} Users from Database --- \n`);
 // CASE 1: MAP (Data Transformation)
 // We create a new array with updated balances and a new 'category' property
 const upgradedUsers = users.map((u) => {
+  const newBalance = u.balance + 50; // Adding a $50 bonus to everyone
   // Creates a NEW array without modifying the original source
   return {
     ...u,
-    balance: u.balance + 50, // Adding a $50 bonus to everyone
+    balance: newBalance,
     category: u.balance > 150 ? 'PREMIUM' : 'BASIC',
     lastUpdate: 2026
   };
@@ -22,7 +23,12 @@ console.table(upgradedUsers.slice(0, 3), ['id', 'name', 'balance', 'category'],)
 
 
 
+// console.log("\n--- 📜 ORIGINAL DATA (category doesn't exist) --- ");
+// console.table(users.slice(0, 3), ['id', 'name', 'balance', 'category']); 
 
+
+// console.log("\n--- ✨UPDATED DATA (new balance & Category) ---");
+// console.table(upgradedUsers.slice(0, 3), ["id", "name", "balance", "category"]);
 
 
 
@@ -49,7 +55,7 @@ const earlyBirds = users.filter((u) => u.regTime === 1);
 console.log(`\n✅ FILTER: Found ${earlyBirds.length} users registered at minute 1.`);
 
 // We use chaining (slice + map) to display only the names of the first 5
-const earlyNames = earlyBirds.slice(0, 5).map(u => u.name);
+const earlyNames = earlyBirds.slice(0, 3).map(u => u.name);
 console.log("Top 5 Early Birds Names:", earlyNames);
 
 
