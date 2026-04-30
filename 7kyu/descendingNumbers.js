@@ -31,3 +31,4 @@ testCases.forEach(({n, expected}, index) => {
         ${ passed ? "✅ PASS" : "❌ FAIL"}`);
     console.log("-------------------------------------------");
 })
+
