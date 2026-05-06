@@ -38,3 +38,20 @@ function createPhoneNumber(numbers) {
 
   return phoneNumber;
 }
+
+
+console.log("--------------- Test Cases ---------------");
+
+const testCases = [
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 0],
+    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+];  
+
+testCases.forEach((element, index) => {
+    const result = createPhoneNumber(element);
+
+    console.log(`Test ${index + 1}: [${element}]`);
+    console.log(`Result: "${result}"`);
+    console.log("------------------------------------------");
+})
