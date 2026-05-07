@@ -42,3 +42,35 @@ function isValidSet(quantities, shapes, colors, fills) {
   return true;
 }
 
+
+
+// Test Cases
+
+const testCases = [
+    [[1, 2, 3], ['diamond', 'diamond', 'diamond'], ['green', 'green', 'green'], ['blank', 'blank', 'blank']], // true
+    [[1, 1, 1], ['diamond', 'snake', 'capsule'], ['green', 'blue', 'red'], ['blank', 'striped', 'solid']], // true
+    [[1, 2, 2], ['diamond', 'diamond', 'diamond'], ['green', 'green', 'green'], ['blank', 'blank', 'blank']], // false
+    [[1, 2, 3], ['diamond', 'snake', 'capsule'], ['green', 'blue', 'red'], ['blank', 'striped', 'solid']], // true
+    [[1, 1, 2], ['diamond', 'diamond', 'diamond'], ['green', 'green', 'green'], ['blank', 'blank', 'blank']], // false
+    [[1, 2, 3], ['diamond', 'diamond', 'diamond'], ['green', 'blue', 'red'], ['blank', 'striped', 'solid']], // true
+    [[1, 2, 3], ['diamond', 'snake', 'capsule'], ['green', 'green', 'green'], ['blank', 'striped', 'solid']], // false
+    [[1, 2, 3], ['diamond', 'snake', 'capsule'], ['green', 'blue', 'red'], ['blank', 'blank', 'solid']], // false   
+
+];
+
+
+
+
+testCases.forEach((element, index) => {
+  const result = isValidSet(...element);
+
+  console.log(`--- TEST #${index + 1} ---`);
+
+  console.log(`quantity: [${element[0]}]`);
+  console.log(`forms:     [${element[1]}]`);
+  console.log(`colors:    [${element[2]}]`);
+  console.log(`fills:   [${element[3]}]`);
+
+  console.log(`RESULTADO:  ${result ? '✅ TRUE' : '❌ FALSE'}`);
+  console.log('------------------------------------------\n');
+});
