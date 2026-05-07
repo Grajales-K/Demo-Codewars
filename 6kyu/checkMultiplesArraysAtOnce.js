@@ -74,3 +74,22 @@ testCases.forEach((element, index) => {
   console.log(`RESULTADO:  ${result ? '✅ TRUE' : '❌ FALSE'}`);
   console.log('------------------------------------------\n');
 });
+
+
+
+
+// ----------------- docs ----------------
+// new Set() will create a new Set object. A Set is a collection of unique 
+// values. When you create a Set, it will only store unique values, meaning 
+// that if you try to add duplicate values, they will be ignored.
+
+// .size property returns the number of (unique) elements in a Set object.
+// It is the equivalent of .length for arrays.
+
+new Set([1, 2, 3]).size; // 3 (all different)
+new Set([1, 1, 1]).size; // 1 (all duplicates, only one remains)
+new Set([1, 1, 2]).size; // 2 (two duplicates, one different)
+
+const numbers = [1, 1, 2, 2, 3, 4, 4, 4];
+const unique = [...new Set(numbers)]; 
+// result: [1, 2, 3, 4]
