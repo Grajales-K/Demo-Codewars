@@ -119,7 +119,7 @@ function isLanguageDiverse1(list) {
 
 
 // --------------- option 3 -----------------
-function isLanguageDiverse(list) {
+function isLanguageDiverse2(list) {
   // 1. We create a "counter" object to store how many people speak each language.
   // Note: The keys (Python, Ruby, JavaScript) must match the casing in the data exactly.
   const counts = { Python: 0, Ruby: 0, JavaScript: 0 };
