@@ -35,3 +35,35 @@ function areEqual(value1, value2) {
     return true;
 }
 
+
+
+
+console.log('--------------- Test Cases ---------------');
+
+const testCases = [
+  [
+    { laura: 4, adam: 3 },
+    { laura: 4, adam: 3 }
+  ],
+  [
+    { adam: 3, laura: 4, maisie: 2 },
+    { laura: 4, adam: 3 }
+  ],
+  [
+    [{ a: 4 }, { b: 3 }],
+    [{ b: 3 }, { a: 4 }]
+  ],
+  [
+    { a: ['5', '6', '7'], b: ['4', '5', '6'] },
+    { a: [5, 6, 7], b: [4, 5, 6] }
+  ],
+  ['Hello', 'Hello']
+];
+
+testCases.forEach((element, index) => {
+  const result = areEqual(...element);
+
+  console.log(`Test ${index + 1}: [${element}]`);
+  console.log(`Result: ${result}`);
+  console.log('------------------------------------------');
+});           
