@@ -16,14 +16,14 @@
 
 function areEqual(value1, value2) {
 
-    if(value1, value2 ) return true;
+    if(value1 === value2 ) return true;
 
     if(typeof value1 !==  'object' || typeof value2 !== 'object') return false;
 
     if (value1 === null || value2 === null) return false;
 
-    let keys1 = object.keys(value1);
-    let keys2 = object.keys(value2);
+    let keys1 = Object.keys(value1);
+    let keys2 = Object.keys(value2);
     if(keys1.length !== keys2.length) return false;
 
     for (let key of keys1) {
