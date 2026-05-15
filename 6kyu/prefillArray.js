@@ -41,4 +41,62 @@ function prefill(n, v) {
 }
 
 
+console.log('-------------- TEST CASES: ÉXITO ------------------');
 
+const testCases = [
+  [
+    [3, 1],
+    [1, 1, 1]
+  ],
+  [
+    [2, 'abc'],
+    ['abc', 'abc']
+  ],
+  [['1', 1], [1]],
+  [
+    [3, prefill(2, '2d')],
+    [
+      ['2d', '2d'],
+      ['2d', '2d'],
+      ['2d', '2d']
+    ]
+  ],
+  [[0, 'vacio'], []]
+];
+
+testCases.forEach(([input, expected]) => {
+  const result = prefill(input[0], input[1]);
+
+  // Convertimos a string plano para comparar el contenido en Node
+  const passed = result.flat().toString() === expected.flat().toString();
+
+  console.log(
+    `Input: "${input}" | Expected: "${expected}" | Test Passed: ${passed}`
+  );
+});
+
+console.log('\n-------------- TEST CASES: ERRORES ------------------');
+
+const errorCases = [
+  ['xyz', 'xyz is invalid'],
+  ['3.5', '3.5 is invalid'],
+  [-5, '-5 is invalid'],
+  [Infinity, 'Infinity is invalid'],
+  [true, 'true is invalid']
+];
+
+errorCases.forEach(([input, expected]) => {
+  let passed = false;
+
+  try {
+    prefill(input, 1);
+  } catch (e) {
+    if (e.name === 'TypeError' && e.message === expected) {
+      passed = true;
+    }
+  }
+
+  console.log(
+    `Input: "${input}" | Expected: "${expected}" | Test Passed: ${passed}`
+  );
+});
