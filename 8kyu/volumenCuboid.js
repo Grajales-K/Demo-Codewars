@@ -12,6 +12,12 @@ class Kata {
   }
 }
 
+const getVolumeOfCuboid1 = (length, width, height) => {
+  return length * width * height;
+};
+// Or even shorter:
+const getVolumeOfCuboid2 = (l, w, h) => l * w * h;
+
 console.log('----------- Testing getVolumeOfCuboid -----------\n');
 
 // Object-driven test cases
