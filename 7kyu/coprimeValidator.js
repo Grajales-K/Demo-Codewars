@@ -2,7 +2,7 @@
 
 // Instructions
 // Output
-// Write a program to determine if the two given numbers are coprime. A pair of 
+// Write a program to determine if the two given numbers are coprime. A pair of
 // numbers are coprime if their greatest shared factor is 1.
 
 // The inputs will always be two positive integers between 2 and 99.
@@ -21,11 +21,32 @@
 // Greatest shared factor: 3
 // Result: 12 and 39 are not coprimes
 
-
 function coprimeValidator(num1, num2) {
-  const gcd = (a, b) => b === 0 ? a : gcd(b, a % b);
+  const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
   return gcd(num1, num2) === 1;
 }
 
-
 const isCoprime = (x, y) => (y ? isCoprime(y, x % y) : x == 1);
+
+console.log('----------- Testing coprimeValidator -----------\n');
+
+// Object-driven test cases
+const testCases = [
+  { num1: 20, num2: 27, expected: true },
+  { num1: 12, num2: 39, expected: false },
+  { num1: 17, num2: 19, expected: true },
+  { num1: 15, num2: 28, expected: true },
+  { num1: 18, num2: 24, expected: false }
+];
+
+testCases.forEach(({ num1, num2, expected }, index) => {
+  const result = coprimeValidator(num1, num2);
+  const passed = result === expected;
+
+  console.log(`Test #${index + 1}: Inputs [${num1}, ${num2}]`);
+  console.log(
+    `result: ${result} | expected: ${expected} | ${
+      passed ? '✅ PASS' : '❌ FAIL'
+    }\n`
+  );
+});
