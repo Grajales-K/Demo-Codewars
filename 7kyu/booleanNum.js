@@ -6,9 +6,9 @@ function largestNum(num1, num2, num3) {
 }
 
 
-function largestNum(num1, num2, num3) {
-  return Math.max(num1, num2, num3);
-}
+// function largestNum(num1, num2, num3) {
+//   return Math.max(num1, num2, num3);
+// }
 
 console.assert(largestNum(5, 3, 7) === 7, 'Largest number in third position');
 console.assert(largestNum(5, 9, 7) === 9, 'Largest number in second position');
@@ -19,9 +19,3 @@ console.assert(
 );
 console.assert(largestNum(-3, -4, -5) === -3, 'Failed with negative numbers');
 
-
-
-
-function isEven(n) {
-  return n % 2 === 0;
-}
