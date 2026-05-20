@@ -27,3 +27,23 @@ const sequenceSum = (begin, end, step) => {
   return result;
 };
 
+
+// Recursion
+
+const sequenceSum1 = (begin, end, step) =>
+  end < begin ? 0 : begin + sequenceSum(begin + step, end, step);
+
+
+console.log("---------------- tests ----------------");
+
+testCases = [
+    [2, 2, 2, 2],
+    [2, 6, 2, 12],
+    [1, 5, 1, 15],
+    [1, 5, 3, 5]
+    ];
+
+testCases.forEach(([begin, end, step, expected]) => {
+    const result = sequenceSum(begin, end, step);
+    console.log(`sequenceSum(${begin}, ${end}, ${step}) = ${result} | expected: ${expected} | ${result === expected ? "PASS" : "FAIL"}`);
+});
