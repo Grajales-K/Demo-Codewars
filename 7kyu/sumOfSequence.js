@@ -33,17 +33,24 @@ const sequenceSum = (begin, end, step) => {
 const sequenceSum1 = (begin, end, step) =>
   end < begin ? 0 : begin + sequenceSum(begin + step, end, step);
 
+console.log('---------------- tests ----------------');
 
-console.log("---------------- tests ----------------");
+const testCases = [
+  [2, 2, 2, 2],
+  [2, 6, 2, 12],
+  [1, 5, 1, 15],
+  [1, 5, 3, 5]
+];
 
-testCases = [
-    [2, 2, 2, 2],
-    [2, 6, 2, 12],
-    [1, 5, 1, 15],
-    [1, 5, 3, 5]
-    ];
+for (const [begin, end, step, expected] of testCases) {
+  const resIterative = sequenceSum(begin, end, step);
+  const resRecursive = sequenceSum1(begin, end, step);
 
-testCases.forEach(([begin, end, step, expected]) => {
-    const result = sequenceSum(begin, end, step);
-    console.log(`sequenceSum(${begin}, ${end}, ${step}) = ${result} | expected: ${expected} | ${result === expected ? "PASS" : "FAIL"}`);
-});
+  const passes = resIterative === expected && resRecursive === expected;
+
+  console.log(
+    `begin: ${begin} | end: ${end} | step: ${step} | result: ${resIterative} | expected: ${expected} | ${
+      passes ? 'PASS' : 'FAIL'
+    }`
+  );
+}
