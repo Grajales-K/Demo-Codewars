@@ -21,8 +21,10 @@ function sumAverage(arrays) {
 
   const totalSum = average.reduce((curr, accu) => curr + accu, 0);
 
-  return totalSum;
+   return Math.floor(totalSum);
 }
+
+
 
 console.log('----------- Testing sumAverage -----------\n');
 
