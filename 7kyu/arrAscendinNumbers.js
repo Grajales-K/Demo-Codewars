@@ -37,7 +37,3 @@ for (const arr of testarrays) {
   const result = minMax(arr);
   console.log("Result after function", result);
 }
-
-//To display the each testarrays we use console.log individually, 
-// and we will see the input before to pass it to the function, 
-// and then we will see the result of the function.
